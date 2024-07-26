@@ -51,5 +51,5 @@ const btnReset = document.getElementById("btnReset");
 btnReset.addEventListener("click", limpiar); 
 
 function limpiar(){
-    resultado.textContent=""; 
+    location.reload()
 }
