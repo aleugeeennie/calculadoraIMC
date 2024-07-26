@@ -46,3 +46,10 @@ function operacion(altura, peso){
           parrafo.textContent = `Peso: ${peso}. Altura: ${convertirMetros} m². IMC: ${IMC.toFixed(2)};` 
           return parrafo;
 }
+
+const btnReset = document.getElementById("btnReset"); 
+btnReset.addEventListener("click", limpiar); 
+
+function limpiar(){
+    resultado.textContent=""; 
+}

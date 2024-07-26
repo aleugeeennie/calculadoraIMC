@@ -9,6 +9,7 @@
     --mainColor: #1f2226;
     --gray: #d4d4d4;
     --blueLight: #08c6ec;
+    --green: #b3ec08;
 }
 
   body {
@@ -31,7 +32,7 @@
     border-radius: 15px;
     width: 100%;
     max-width: 700px;
-    height: 400px;
+    height: auto;
     -webkit-box-shadow: var(--shadow); 
     -moz-box-shadow: var(--shadow);
     box-shadow: var(--shadow);
@@ -86,6 +87,20 @@
     max-width: 350px;
     text-align: center;
     padding: 20px;
+  }
+
+  .btnReset {
+    background-color: var(--green);
+    font-family: "Poppins", sans-serif;
+    color: var(--mainColor);
+    text-transform: uppercase;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {
