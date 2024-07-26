@@ -1,0 +1,96 @@
+/* styles.css */
+
+:root {
+    --bg: #e8ecf2; 
+    --btnPrimary: #006df1;
+    --btnPrimaryHover: #004cf1;
+    --white: #ffffff; 
+    --shadow: 7px 10px 14px -4px rgba(197,198,199,1);
+    --mainColor: #1f2226;
+    --gray: #d4d4d4;
+    --blueLight: #08c6ec;
+}
+
+  body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg);
+  }
+
+
+  .container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+
+  .row {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    -webkit-box-shadow: var(--shadow); 
+    -moz-box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+  }
+
+  .container .title h2 {
+    text-align: center;
+    color: var(--mainColor);
+  }
+
+  .container .title {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    border: 1px solid var(--gray);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .btnSubmit {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--btnPrimary);
+    color: var(--white);
+    text-transform: uppercase;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .btnSubmit:hover {
+    background-color: var(--btnPrimaryHover);
+  }
+
+  .resultado {
+   width: 100%;
+   display: none;
+  }
+
+  .resultado p {
+    margin: 5px auto;
+    border: 1px solid var(--blueLight);
+    color: var(--blueLight);
+    max-width: 350px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+        width: 100%;
+        margin: 10px;
+      }
+  }
